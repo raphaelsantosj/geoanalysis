@@ -1,0 +1,25 @@
+#geopanel{
+	margin-top: 40px;
+	margin-left: 50px;
+	height:600px;
+	width:400px;
+	overflow:auto;
+	float:left;
+	
+}
+
+#geopanelheader{
+	background: rgb(83, 101, 200); 
+	color: white;
+}
+
+
+#indexdropdown{
+	margin-left: 50px;
+}
+
+#dropdown{
+  background: rgb(63, 81, 181);
+  color: white;
+  
+}

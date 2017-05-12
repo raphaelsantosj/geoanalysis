@@ -1,0 +1,15 @@
+#indexpanel{
+	margin-top: 40px;
+	margin-left: 80px;
+	height:600px;
+	width:400px;
+	overflow:auto;
+	float: right;
+	
+}
+
+#indexpanelheader{
+	background:rgb(83, 101, 200); 
+	color: white;
+}
+

@@ -1,0 +1,5 @@
+#first line -> colatitude em GRaus
+#second line -> longitude em Graus
+#"HER"		#"KAK" 		"HON" 		"SJG" 		 
+124.43 		53.77 		68.68		71.89 		
+19.23		140.18 		 202		293.85 	
