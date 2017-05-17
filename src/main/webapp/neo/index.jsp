@@ -47,6 +47,8 @@
           <li><a href="#home" id="scrollToTop">Home</a></li>
           <li> <a href="#geo-index" class="smoothScroll">Geomagnetic Index</a></li>
           <li> <a href="#observatories" class="smoothScroll">Observatories</a></li>
+          <li><a href="pt-br/index.jsp"><img src="assets/img/br.png" width="20"></a></li>
+          <li style="margin-left:-20px;"><a href="#eng-us"><img src="assets/img/us.png" width="20"></a></li>
         </ul>
       </div>
       <!--/.nav-collapse --> 
@@ -166,8 +168,6 @@
         <h3 class="title-geo">What is Geomagnetic Index?</h3>
         <p>Geomagnetic field has been observed routinely at geomagnetic observatories and recorded as "geomagnetic field data". This kind of data is essential for research in geomagnetism, for instance, they are indispensable to derivation of geomagnetic indices and geomagnetic field models. Geomagnetic field is a vector and has three components like north-south, east-west, and up-down elements. Geomagnetic indices describe how the geomagnetic field is disturbed.</p>
 
-        <p>O campo geomagnético é observado rotineramente em observatórios geomagnéticos e são gravados como "dados do campo geomagnético". Esse tipo de dado é essencial para pesquisas em geomagnetismo, são indispensáveis para a derivação de indices geomagnéticos e modelos do campo geomagnético. O campo geomagnético é um vetor e possui tres componentes, norte-sul, leste-oeste e uma componente para medição de altura. Índices geomagnéticos descrevem a perturbação do campo geomagnético.</p>
-
         <a href="http://wdc.kugi.kyoto-u.ac.jp/index.html" target="_blank">Source: World Data Center for Geomagnetism, Kyoto</a>
 
         <div class="dropdown" style="margin-top: 100px;">
@@ -200,14 +200,6 @@
             moderated(-100 nT up to -50 nT), 
             intense (-250 nT up to -100 nT) and 
             very intense (less than -250 nT). 
-            </p>
-            <p>
-            O índice Wisa-dst é usado para identificar tempestades geomagnéticas. Essas tempestades podem ser definidas como: 
-            fracas (-50 nT até -30 nT), 
-            moderadas(-100 nT até -50 nT), 
-            intensas (-250 nT até -100 nT) and 
-            muito intensas (menos de -250 nT).
-            Moderated Geomagnétic Storm on Sep/12 Tempestade Geomagnética Moderada em 12 de Set
             </p>
             <img id="centralizar-img" src="assets/img/moderated.png" class="img-responsive"></img>
             <p>*nT = nanoTeslas</p>
