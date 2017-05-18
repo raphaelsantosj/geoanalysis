@@ -4,12 +4,11 @@
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <meta charset="UTF-8">
-<title>Treta</title>
+<title>Wisa Chart</title>
 </head>
 <body>
 <div id="container" style="min-width: 800px; height: 310px; margin: 0 auto"></div>
 <script>
-
 $(function () {
     $.getJSON('http://localhost:9090/geoanalysis/rest/wisaplot/wisatodayplot', function (data) {
         var wisaArray =[];
@@ -22,20 +21,7 @@ $(function () {
 		//	console.log(data[i][1])
 		//	chartWisaData.push(data[i][1])
 		//	wisaArray.push(chartWisaData)
-
 		//}
-		
-		var tamanho_json = Object.keys(data).length;
-		console.log(tamanho_json);
-		var data2 = [];
-		
-		for(var i = 0; i < (tamanho_json/4); i++){
-			data2[i] = data[i];
-		}
-		
-		console.log(data2);
-		
-		
         
     	var chart = new Highcharts.Chart({
             chart: {
@@ -87,12 +73,11 @@ $(function () {
                     threshold: null
                 }
             },
-
             series: [{
                 type: 'area',
                 name: 'Wisa',
                 color: '#ff6666',
-                data: data2
+                data: data
             }]
             
         });
