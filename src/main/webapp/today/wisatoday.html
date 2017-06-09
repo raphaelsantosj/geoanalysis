@@ -14,14 +14,14 @@ $(function () {
         var wisaArray =[];
        
        
-		//for (var i in data){
-		//	var chartWisaData =[]
+		for (var i in data){
+			var chartWisaData =[]
 	
-		//	chartWisaData.push( new Date(data[i][0]))
-		//	console.log(data[i][1])
-		//	chartWisaData.push(data[i][1])
-		//	wisaArray.push(chartWisaData)
-		//}
+			chartWisaData.push( new Date(data[i][0]))
+			console.log(data[i][1])
+			chartWisaData.push(data[i][1])
+			wisaArray.push(chartWisaData)
+		}
         
     	var chart = new Highcharts.Chart({
             chart: {

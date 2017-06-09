@@ -48,10 +48,11 @@ start <- function(dIni, dFinal, isDaily){
   Wisa<-matrix(wisa,N,1)
   
   
-  dIni <- as.numeric(as.POSIXct(as.Date(dIni)+0.125, format="%y/%m/%d"))*1000
-  dFinal <- as.numeric(as.POSIXct(as.Date(dFinal)+0.125, format="%y/%m/%d"))*1000
-  t <- seq(dIni, dFinal, len=len)
-  
+  #dIni <- as.numeric(as.POSIXct(as.Date(dIni)+0.125, format="%y/%m/%d"))*1000
+  #dFinal <- as.numeric(as.POSIXct(as.Date(dFinal)+0.125, format="%y/%m/%d"))*1000
+  #t <- seq(dIni, dFinal, len=len)
+  source("dataVariation.R")
+  t <- dateVariation(dIni, dFinal)
 
   ultima <- toJSON(matrix(c(t, wisa), nrow=length(wisa), ncol = 2))
   

@@ -190,7 +190,7 @@
           <li><a data-toggle="tab" href="#meyer">Meyer</a></li>
           <li><a data-toggle="tab" href="#wci">WCI</a></li>
           <li><a data-toggle="tab" href="#wsf">WSF</a></li>
-          <li><a data-toggle="tab" href="#pc">PC</a></li>
+          <li><a data-toggle="tab" href="#pcx">PC</a></li>
         </ul>
 
         <div class="tab-content">
@@ -219,7 +219,7 @@
             <h3>WSF</h3>
             <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
           </div>
-          <div id="pc" class="tab-pane fade">
+          <div id="pcx" class="tab-pane fade">
             <h3>PC</h3>
             <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
           </div>

@@ -48,7 +48,8 @@
           <li><a href="../index.jsp">Home</a></li>
           <li> <a href="../index.jsp#geo-index" class="smoothScroll">Geomagnetic Index</a></li>
           <li> <a href="../index.jsp#observatories" class="smoothScroll">Observatories</a></li>
-          <li> <a href="../index.jsp#feedback" class="smoothScroll">Feedback</a></li>
+          <li><a href="../pt-br/index.jsp"><img src="../assets/img/br.png" width="20"></a></li>
+          <li style="margin-left:-20px;"><a href="#eng-us"><img src="../assets/img/us.png" width="20"></a></li>
         </ul>
       </div>
       <!--/.nav-collapse --> 
@@ -61,15 +62,15 @@
   <div id="form-data" class="container">
     <form class="col-md-12" action="wisaplot" method="get">
       <div class="form-group col-md-4">
-        <label>Data inicial: </label>    
+        <label>Initial Date: </label>    
         <input id="datai" name="datai" type="text" class="form-control" placeholder="dd/mm/aaaa" />
       </div>
       <div class="form-group col-md-4">
-        <label>Data final: </label>    
+        <label>Final Date: </label>    
         <input id="dataf" name="dataf" type="text" class="form-control" placeholder="dd/mm/aaaa"/>
       </div>
       <div class="form-group col-md-4">
-        <button type="submit" class="btn btn-enviar" onclick="mudarestado()">Enviar</button>
+        <button type="submit" class="btn btn-enviar" onclick="mudarestado()">Send</button>
       </div>
       
 		<script>
