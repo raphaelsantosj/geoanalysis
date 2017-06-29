@@ -18,16 +18,17 @@ import junit.framework.TestCase;
 public class WisaCalcTest extends TestCase{
 	
 	WisaCalc wisaCalc = new WisaCalc();
-	
+	int quant_ids;
 	
 	@Before
 	public void prepareEnvironment(){
-		Date d1 = new Date(114, 9, 1);
-		Date d2 = new Date(114, 9, 2);
+		Date dIni = new Date(114, 9, 1);
+		Date dFim = new Date(114, 9, 2);
+		quant_ids = WisaCalc.wisaCalc(dIni, dFim).get(0).size();
 	}
 	
 	@Test
-	public void testCalc(){
-
+	public void testWisaCalc(){
+		//
 	}
 }
