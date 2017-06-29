@@ -40,7 +40,7 @@ public class RIntegration {
 	}
 	
 	public void startWisa() throws RserveException{
-		connection.eval("source('/home/raphael/workspace/geoanalysis/src/main/java/core/applications/wisa/Rfiles/entradawisa.R')"); //LOAD R Function for WISA
+		connection.eval("source('/home/raphael/git/geoanalysis/src/main/java/core/applications/wisa/Rfiles/entradawisa.R')"); //LOAD R Function for WISA
 		
 	}
 	

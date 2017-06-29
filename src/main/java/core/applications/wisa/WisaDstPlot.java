@@ -50,6 +50,7 @@ public class WisaDstPlot {
 		try {
 			RIntegration.getInstance().startWisa();
 			CacheService.getInstance().setWisaToday(RIntegration.getInstance().plotWisa("2014-09-01", "2014-10-31", 1));
+			System.out.println(CacheService.getInstance().getWisaToday());
 			return Response.status(201).entity(CacheService.getInstance().getWisaToday()).build();
 		} catch (Exception e) {
 			e.printStackTrace();

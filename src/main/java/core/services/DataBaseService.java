@@ -2,7 +2,9 @@
   author: Rodrigo Takeshi Seo
   rodrigo.seo@inpe.br
   National Institute For Space Research
-  Version 1.0
+  Version 1.1
+  updated by: Raphael bboy
+  
  **/
 package core.services;
 
@@ -13,6 +15,8 @@ import api.service.DataMinService;
 import api.service.DataSecService;
 import api.service.FailedFileService;
 import api.service.ObservatoryService;
+import api.service.WisaService;
+
 
 public class DataBaseService {
 	private static DataBaseService dataBaseServiceInstance;
@@ -27,9 +31,12 @@ public class DataBaseService {
 	private DataMinService	dataMinService;
 	@Autowired
 	private DataSecService dataSecService;
+	@Autowired
+	private WisaService wisaService;
 	
 	
 	private DataBaseService(){
+		
 	}
 	
 	public static DataBaseService getInstance(){
@@ -60,6 +67,10 @@ public class DataBaseService {
 	public static DataBaseService getDataBaseServiceInstance() {
 		return dataBaseServiceInstance;
 	}
+	
+	public WisaService getWisaService() {
+		return wisaService;
+	}
 
 
 	public void setDataFileService(DataFileService dataFileService) {
@@ -80,6 +91,10 @@ public class DataBaseService {
 
 	public void setDataSecService(DataSecService dataSecService) {
 		this.dataSecService = dataSecService;
+	}
+	
+	public void setWisaService(WisaService wisaService) {
+		this.wisaService = wisaService;
 	}
 
 	

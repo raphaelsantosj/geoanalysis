@@ -1,3 +1,10 @@
+/**
+  author: Rodrigo Takeshi Seo
+  rodrigo.seo@inpe.br
+  National Institute For Space Research
+  Version 1.0
+ **/
+
 package api.model;
 
 import java.io.Serializable;

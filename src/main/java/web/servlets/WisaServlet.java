@@ -74,8 +74,6 @@ public class WisaServlet extends HttpServlet {
 			response.sendRedirect("/geoanalysis/neo/geoindex/invalid.jsp");
 		}
 		
-		
-	
 	}
 		
 }

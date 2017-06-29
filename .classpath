@@ -24,15 +24,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/raphael/R/REngine-2.1.0.jar">
-		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="/home/raphael/Área de Trabalho/R"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/raphael/R/Rserve-1.8.1.jar">
-		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="/home/raphael/Área de Trabalho/R"/>
-		</attributes>
-	</classpathentry>
+	<classpathentry kind="lib" path="/home/raphael/R/REngine-2.1.0.jar"/>
+	<classpathentry kind="lib" path="/home/raphael/R/Rserve-1.8.1.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

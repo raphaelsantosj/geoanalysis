@@ -14,7 +14,7 @@ public class EnvironmentSetup {
 	private EnvironmentSetup(){
 		FileReader arq;
 		try {
-			arq = new FileReader("/home/raphael/workspace/geoanalysis/ftpsetup.txt");
+			arq = new FileReader("/home/raphael/git/geoanalysis/ftpsetup.txt");
 			BufferedReader lerArq = new BufferedReader(arq);
 			this.setAddress(lerArq.readLine());
 		     this.ftpLogin = lerArq.readLine();

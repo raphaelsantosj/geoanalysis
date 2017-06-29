@@ -1,3 +1,11 @@
+/**
+  author: Raphael dos Santos Jesus
+  raphaesantos.j@gmail.com
+  National Institute For Space Research
+  Version 1.0
+ **/
+
+
 package api.model;
 
 import java.io.Serializable;
@@ -5,6 +13,7 @@ import java.sql.Date;
 import java.sql.Time;
 
 import javax.persistence.Column;
+import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -13,17 +22,12 @@ import javax.persistence.Table;
 @Table(name="WISA")
 public class Wisa implements Serializable{
 	
-	@Id
-	@Column(name = "WISA_DATE")
-	private Date date; //Data date
-	@Id
-	@Column(name = "WISA_Hour")
-	private Time hour; //Data time
+	@EmbeddedId
+	private WisaPk id;
+	@Column(name = "DMIN_DOY")
+	private Integer DOY; //Data Day of the year
 	@Column(name = "WISA_Index")
 	private Double value; //Wisa-Dst Index
-	
-	
-	
 	
 	public Double getValue() {
 		return value;
@@ -31,19 +35,21 @@ public class Wisa implements Serializable{
 	public void setValue(Double value) {
 		this.value = value;
 	}
-	public Date getDate() {
-		return date;
+	public WisaPk getId() {
+		return id;
 	}
-	public void setDate(Date date) {
-		this.date = date;
+	public void setId(WisaPk id) {
+		this.id = id;
 	}
-	public Time getHour() {
-		return hour;
+	public Integer getDOY() {
+		return DOY;
 	}
-	public void setHour(Time hour) {
-		this.hour = hour;
+	public void setDOY(Integer dOY) {
+		DOY = dOY;
 	}
-
 	
-	
+	@Override
+	public String toString() {
+		return "Wisa [id=" + id + ", DOY=" + DOY + ", value=" + value + "]";
+	}
 }
