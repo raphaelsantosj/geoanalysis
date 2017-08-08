@@ -10,8 +10,6 @@ import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import api.model.DataFile;
-import api.model.DataMin;
 import api.model.Wisa;
 import api.model.WisaPk;
 import core.services.DataBaseService;
@@ -45,6 +43,7 @@ public class WisaTest extends TestCase{
 		wisa2.setId(wisaPk2);
 		wisa3.setId(wisaPk3);
 	}
+	
 	
 	@Test
 	public void testSave(){

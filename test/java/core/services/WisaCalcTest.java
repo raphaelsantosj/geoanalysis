@@ -29,6 +29,6 @@ public class WisaCalcTest extends TestCase{
 	
 	@Test
 	public void testWisaCalc(){
-		//
+		//assertEquals()/
 	}
 }
